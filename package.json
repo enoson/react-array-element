@@ -1,0 +1,26 @@
+{
+  "name": "react-array-element",
+  "version": "0.9.0",
+  "description": "JSX replacement, using vanilla array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enoson/react-array-element.git"
+  },
+  "keywords": [
+    "react",
+    "JSX"
+  ],
+  "author": "e.enoson@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enoson/react-array-element/issues"
+  },
+  "homepage": "https://github.com/enoson/react-array-element#readme",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
