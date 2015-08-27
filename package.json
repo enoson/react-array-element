@@ -13,10 +13,6 @@
   ],
   "author": "e.enoson@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/enoson/react-array-element/issues"
-  },
-  "homepage": "https://github.com/enoson/react-array-element#readme",
   "dependencies": {
     "react": "^0.13.3"
   }
