@@ -1,6 +1,6 @@
 {
   "name": "react-array-element",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "JSX replacement, using vanilla array",
   "main": "index.js",
   "repository": {
