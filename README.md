@@ -1,6 +1,6 @@
 # react-array-element
 JSX:
-```
+```js
 <div className="comment">
   <h2 className="commentAuthor">
       {this.props.author}
@@ -8,13 +8,13 @@ JSX:
 </div>
 ```
 react-array-element:
-```
+```js
 $(".comment",
    ["h2.commentAuthor", this.props.author])
 ```
 JSX:
 
-```
+```js
 <ComponentA id="email-input"
   style = {style} onClick = {this.onClick} >
   <input
@@ -23,7 +23,7 @@ JSX:
 </ComponentA>
 ```
 react-array-element:
-```
+```js
 $("ComponentA#email-input",
   {style, onClick:this.onClick},
   ["input", {
