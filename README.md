@@ -9,6 +9,8 @@ JSX:
 ```
 react-array-element:
 ```js
+import $ from 'react-array-element'
+
 $(".comment",
    ["h2.commentAuthor", this.props.author])
 ```
