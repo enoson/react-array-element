@@ -33,4 +33,4 @@ $("ComponentA#email-input",
     onKeyUp: this.onKeyUp }])
 ```
 
-###No more div,id,className,{},closing tag, just vanilla array.
+### No more div,id,className,{},closing tag, just vanilla array.
