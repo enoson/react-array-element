@@ -1,4 +1,4 @@
-module.exports = function() { return arr2react(arguments) }
+module.exports = (...arr)=>arr2react(arr)
 
 function arr2react(arr) {
   var props = arr[1]
@@ -9,18 +9,18 @@ function arr2react(arr) {
     props = {}
   }
 
-  var tag = arr[0]
-  if(isStr(tag)){
-    tag = parseTag(tag)
-    if(tag.id) props.id = tag.id;
-    if(tag.className) {
-      props.className = ((props.className || "") + tag.className).trim()
+  var type = arr[0]
+  if(isStr(type)){
+    type = parseTag(type)
+    if(type.id) props.id = type.id;
+    if(type.className) {
+      props.className = ((props.className || "") + type.className).trim()
     }
-    tag = tag.name
+    type = type.name
   }
 
   var children = []
-  each(arguments[0], function(child) {
+  each(arr, function(child) {
     if (isArr(child)) {
       children.push(arr2react(child))
     } else if (child) {
@@ -28,7 +28,7 @@ function arr2react(arr) {
     }
   }, childStart)
 
-  return require('react').createElement(tag, props, children)
+  return require('react').createElement(type, props, ...children)
 }
 
 function parseTag(str) {
